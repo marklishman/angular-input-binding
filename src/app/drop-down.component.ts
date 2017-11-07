@@ -13,7 +13,7 @@ import { Component } from '@angular/core';
 })
 export class DropDownComponent {
 
-  list = [
+  list: any = [
     {id: 1, name: 'one'},
     {id: 2, name: 'two'},
     {id: 3, name: 'three'}
@@ -22,7 +22,8 @@ export class DropDownComponent {
   log = '';
 
   logDropdown(id: number): void {
-    const NAME = this.list.find((item: any) => item.id === id).name;
+    console.log(typeof id);
+    const NAME = this.list.find((item: any) => item.id === +id).name;
     this.log += `Value ${NAME} was selected\n`;
   }
 }
