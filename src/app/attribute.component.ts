@@ -4,10 +4,12 @@ import { Component } from '@angular/core';
   selector: 'app-attribute',
   template: `
         <h1>Properties and Attributes</h1>
-        <p>
-            <input #one type="text" value="set as attribute" [value]="'property binding'">
-            Attribute: {{one.getAttribute("value")}}, property: {{one.value}}
-        </p>
+        <div>
+            <input #one type="text" value="set as attribute" (keyUp)="0">
+            <div> Attribute: {{one.getAttribute("value")}}</div>
+            <div> Property: {{one.value}}</div>
+        </div>
+        <hr/>
         <p>
             <button #two disabled="false">Disabled</button>
             Attribute: {{two.getAttribute("disabled")}}, property: {{two.disabled}}
