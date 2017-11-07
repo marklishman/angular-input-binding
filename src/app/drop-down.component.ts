@@ -22,7 +22,6 @@ export class DropDownComponent {
   log = '';
 
   logDropdown(id: number): void {
-    console.log(typeof id);
     const NAME = this.list.find((item: any) => item.id === +id).name;
     this.log += `Value ${NAME} was selected\n`;
   }
