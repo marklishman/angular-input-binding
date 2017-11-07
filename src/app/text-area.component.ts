@@ -20,4 +20,4 @@ export class TextAreaComponent {
     this.log += `Text changed to '${value}'\n`;
   }
 }
-
+

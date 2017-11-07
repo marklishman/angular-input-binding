@@ -22,9 +22,9 @@ import { Component } from '@angular/core';
 })
 export class RadioComponent {
 
-  private log = '';
+  log = '';
 
-  private logRadio(element: HTMLInputElement): void {
+  logRadio(element: HTMLInputElement): void {
     this.log += `Radio ${element.value} was selected\n`;
   }
 }

@@ -12,7 +12,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  private showSection(name: string): boolean {
+  showSection(name: string): boolean {
     if (!window.location.search) {
       return true;
     }
