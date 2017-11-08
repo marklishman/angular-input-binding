@@ -1,4 +1,4 @@
-# angular-2-input-binding
+# angular-input-binding
 
 Bind to the following `<input>` fields with Angular 2 and TypeScript: `text`, `textarea`, `checkbox`, `radio` and `select` (drop-down list).
 
